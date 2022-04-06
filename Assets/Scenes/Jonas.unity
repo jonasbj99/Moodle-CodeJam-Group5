@@ -242,7 +242,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 106352722}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 150316157}
+        m_TargetAssemblyTypeName: NavigationBar, Assembly-CSharp
+        m_MethodName: MenuPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &150316152
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,6 +267,7 @@ GameObject:
   - component: {fileID: 150316156}
   - component: {fileID: 150316155}
   - component: {fileID: 150316154}
+  - component: {fileID: 150316157}
   m_Layer: 5
   m_Name: Navigation bar
   m_TagString: Untagged
@@ -346,6 +359,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150316152}
   m_CullTransparentMesh: 1
+--- !u!114 &150316157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150316152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f678e7479b83344fb0f17f510d02db5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coursePanel: {fileID: 477977894}
+  calenderPanel: {fileID: 1949477056}
+  menuPanel: {fileID: 1817247065}
 --- !u!1 &251964658
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,7 +648,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 649171237}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 150316157}
+        m_TargetAssemblyTypeName: NavigationBar, Assembly-CSharp
+        m_MethodName: CalenderPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1357846983
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,7 +1037,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1746252816}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 150316157}
+        m_TargetAssemblyTypeName: NavigationBar, Assembly-CSharp
+        m_MethodName: CoursePage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1753996478
 GameObject:
   m_ObjectHideFlags: 0

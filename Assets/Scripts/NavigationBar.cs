@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class NavigationBar : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject coursePanel;
+    public GameObject calenderPanel;
+    public GameObject menuPanel;
+
+    public void CoursePage()
     {
-        
+        coursePanel.SetActive(true);
+        calenderPanel.SetActive(false);
+        menuPanel.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void CalenderPage()
     {
-        
+        coursePanel.SetActive(false);
+        calenderPanel.SetActive(true);
+        menuPanel.SetActive(false);
+    }
+
+    public void MenuPage()
+    {
+        coursePanel.SetActive(false);
+        calenderPanel.SetActive(false);
+        menuPanel.SetActive(true);
     }
 }
