@@ -38,11 +38,11 @@ public class Calender : MonoBehaviour
             this.dayNum = newDayNum;
             if (dayColor == Color.white || dayColor == Color.green)
             {
-                obj.GetComponentInChildren<Text>().text = (dayNum + 1).ToString();
+                obj.GetComponentInChildren<TMP_Text>().text = (dayNum + 1).ToString();
             }
             else
             {
-                obj.GetComponentInChildren<Text>().text = "";
+                obj.GetComponentInChildren<TMP_Text>().text = "";
             }
         }
     }
@@ -55,7 +55,7 @@ public class Calender : MonoBehaviour
     public Transform[] weeks;
 
     //This is the text object that displays the current month and year
-    public Text MonthAndYear;
+    public TMP_Text MonthAndYear;
 
     //This currDate is the date our calender is currently on. The year and the month is based on the calender, while the day itself is
     // almost always 1.
