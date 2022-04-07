@@ -10,7 +10,7 @@ public class ReverseMovement : MonoBehaviour
 {
     Rigidbody2D rb;
     float dirx;
-    float moveSpeed = -80f;
+    public float moveSpeed = -80f;
 
 
     // Start is called before the first frame update
@@ -23,7 +23,7 @@ public class ReverseMovement : MonoBehaviour
     void Update()
     {
         dirx = Input.acceleration.x * moveSpeed;
-        transform.position = new Vector2(Mathf.Clamp(transform.position.x, 12f, 380f), transform.position.y);
+        transform.position = new Vector2(Mathf.Clamp(transform.position.x, 45f, 580f), transform.position.y);
     }
 
     private void FixedUpdate()
