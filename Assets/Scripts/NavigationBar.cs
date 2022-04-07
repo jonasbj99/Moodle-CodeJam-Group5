@@ -2,12 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// https://www.youtube.com/watch?v=Rfv5M14ZoGY&ab_channel=InfoGamer
 public class NavigationBar : MonoBehaviour
 {
+    /*
     public GameObject coursePanel;
     public GameObject calenderPanel;
     public GameObject menuPanel;
+    */
 
+    [SerializeField] GameObject[] panels;
+
+    /*
     public void CoursePage()
     {
         coursePanel.SetActive(true);
@@ -27,5 +34,15 @@ public class NavigationBar : MonoBehaviour
         coursePanel.SetActive(false);
         calenderPanel.SetActive(false);
         menuPanel.SetActive(true);
+    }
+    */
+
+    public void NavigationBarClick(GameObject activePanel)
+    {
+        for (int i = 0; i < panels.Length; i++)
+        {
+            panels[i].SetActive(false);
+        }
+        activePanel.SetActive(true);
     }
 }
