@@ -6,11 +6,11 @@ using UnityEngine;
  * How Control And Move Gameobject With Accelerometer or Gyroscope in Android Game, April 6th 2022
 */
 
-public class movement : MonoBehaviour
+public class ReverseMovement : MonoBehaviour
 {
     Rigidbody2D rb;
     float dirx;
-    public float moveSpeed = 80f;
+    public float moveSpeed = -80f;
 
 
     // Start is called before the first frame update
@@ -23,7 +23,7 @@ public class movement : MonoBehaviour
     void Update()
     {
         dirx = Input.acceleration.x * moveSpeed;
-        transform.position = new Vector2(Mathf.Clamp(transform.position.x, -70f, 140f), transform.position.y);
+        transform.position = new Vector2(Mathf.Clamp(transform.position.x, 45f, 580f), transform.position.y);
     }
 
     private void FixedUpdate()
