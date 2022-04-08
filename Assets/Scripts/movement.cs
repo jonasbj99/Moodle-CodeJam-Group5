@@ -30,4 +30,9 @@ public class movement : MonoBehaviour
     {
         rb.velocity = new Vector2(dirx, 0f);
     }
+
+        public void DisableWaveAnimation()
+    {
+        this.enabled = false;  
+    }
 }
