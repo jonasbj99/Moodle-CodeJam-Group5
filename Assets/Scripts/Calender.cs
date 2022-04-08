@@ -62,6 +62,9 @@ public class Calender : MonoBehaviour
     //If you have some option to select a day in the calender, you would want the change this objects day value to the last day
     public DateTime currDate = DateTime.Now;
 
+    //This is the highlight color of the current day in the calender. This is public so it can easily be changed from unity inspector window.
+    //Note the standard alpha value is zero and needs to be turned up.
+    public Color highlight;
 
     //In start we set the calender to the current date
     private void Start()
@@ -120,10 +123,10 @@ public class Calender : MonoBehaviour
             }
         }
 
-        //This just checks if today is on our calender. If so, we highlight it in green
+        //This just checks if today is on our calender. If so, we highlight it in the public highlighted variable accessed from unity
         if (DateTime.Now.Year == year && DateTime.Now.Month == month)
         {
-            days[(DateTime.Now.Day - 1) + startDay].UpdateColor(Color.green);
+            days[(DateTime.Now.Day - 1) + startDay].UpdateColor(highlight);
         }
 
     }

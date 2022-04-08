@@ -23,7 +23,7 @@ public class ReverseMovement : MonoBehaviour
     void Update()
     {
         dirx = Input.acceleration.x * moveSpeed;
-        transform.position = new Vector2(Mathf.Clamp(transform.position.x, 45f, 580f), transform.position.y);
+        transform.position = new Vector2(Mathf.Clamp(transform.position.x, 80f, 170f), transform.position.y);
     }
 
     private void FixedUpdate()

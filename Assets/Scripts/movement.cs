@@ -23,7 +23,7 @@ public class movement : MonoBehaviour
     void Update()
     {
         dirx = Input.acceleration.x * moveSpeed;
-        transform.position = new Vector2(Mathf.Clamp(transform.position.x, -70f, 140f), transform.position.y);
+        transform.position = new Vector2(Mathf.Clamp(transform.position.x, 100f, 150f), transform.position.y);
     }
 
     private void FixedUpdate()
