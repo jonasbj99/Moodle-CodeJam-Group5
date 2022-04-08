@@ -18908,8 +18908,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1652209301}
   - component: {fileID: 1652209304}
-  - component: {fileID: 1652209303}
   - component: {fileID: 1652209302}
+  - component: {fileID: 1652209303}
   m_Layer: 5
   m_Name: toggle effect audio
   m_TagString: Untagged
@@ -18948,11 +18948,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1652209300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 095aaa505d29a4a3c8e7475888d2234b, type: 3}
+  m_Script: {fileID: 11500000, guid: b407c1671da46429b9b60e2d4f58815f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _toggleEffects: 0
-  _toggleWaves: 1
+  uiHandleRectTransform: {fileID: 922684547}
+  backgroundActiveColor: {r: 1, g: 0, b: 0, a: 1}
+  handleActiveColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1652209303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18962,12 +18963,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1652209300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b407c1671da46429b9b60e2d4f58815f, type: 3}
+  m_Script: {fileID: 11500000, guid: 095aaa505d29a4a3c8e7475888d2234b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiHandleRectTransform: {fileID: 922684547}
-  backgroundActiveColor: {r: 0.8490566, g: 0.14017442, b: 0.14017442, a: 0.92156863}
-  handleActiveColor: {r: 1, g: 1, b: 1, a: 1}
+  _toggleEffects: 1
+  _toggleWaves: 1
 --- !u!114 &1652209304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19015,9 +19015,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1652209302}
-        m_TargetAssemblyTypeName: ToggleAudio, Assembly-CSharp
-        m_MethodName: Toggle
+      - m_Target: {fileID: 1766308395}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: ToggleEffects
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19030,6 +19030,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1357846988}
         m_TargetAssemblyTypeName: PlaySoundOnStart, Assembly-CSharp
         m_MethodName: ToggleEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1652209303}
+        m_TargetAssemblyTypeName: ToggleAudio, Assembly-CSharp
+        m_MethodName: Toggle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20312,6 +20324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1766308396}
   - component: {fileID: 1766308395}
+  - component: {fileID: 1766308397}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -20349,6 +20362,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1766308397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766308394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 095aaa505d29a4a3c8e7475888d2234b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _toggleEffects: 1
+  _toggleWaves: 1
 --- !u!1 &1768076543
 GameObject:
   m_ObjectHideFlags: 0
@@ -20967,7 +20994,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

@@ -18,7 +18,7 @@ public class SwitchToggle : MonoBehaviour
 
     Vector2 handlePosition;
 
-    void Awake()
+    void Start()
     {
         toggle = GetComponent<Toggle>();
         handlePosition = uiHandleRectTransform.anchoredPosition;
