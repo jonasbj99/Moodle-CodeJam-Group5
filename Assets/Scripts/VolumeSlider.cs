@@ -5,12 +5,23 @@ using UnityEngine.UI;
 
 public class VolumeSlider : MonoBehaviour
 {
-    [SerializeField] private Slider _slider;
+    [SerializeField] public Slider _slider;
+
+    //private float MasterVolume = 0f;
+
 
     void Start()
     {   
-        SoundManager.Instance.ChangeMasterVolume(_slider.value);
+        _slider.value = PlayerPrefs.GetFloat("gayvolume");     
         _slider.onValueChanged.AddListener(val => SoundManager.Instance.ChangeMasterVolume(val));
+
     }
+    void OnDestroy()
+    {
+        PlayerPrefs.SetFloat("gayvolume", _slider.value);
+        PlayerPrefs.Save();
+        Debug.Log("save da volume");
+    }
+
 
 }

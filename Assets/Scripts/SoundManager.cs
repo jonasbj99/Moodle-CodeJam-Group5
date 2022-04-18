@@ -8,6 +8,7 @@ public class SoundManager : MonoBehaviour
 
     [SerializeField] private AudioSource _effectsSource, _oceanSource;
 
+
     void Awake() {
         if (Instance != null) {
             Destroy(this.gameObject);

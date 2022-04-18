@@ -13792,6 +13792,7 @@ GameObject:
   - component: {fileID: 1357846985}
   - component: {fileID: 1357846984}
   - component: {fileID: 1357846988}
+  - component: {fileID: 1357846989}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -13898,6 +13899,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _clip: {fileID: 8300000, guid: 18b2b5ea27b864c76a9eb279be40bff1, type: 3}
   _clip2: {fileID: 8300000, guid: a5919adc2823040339fd3dc0137f91b7, type: 3}
+--- !u!114 &1357846989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357846983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 095aaa505d29a4a3c8e7475888d2234b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _toggleEffects: 1
+  _toggleWaves: 1
 --- !u!1 &1363790124
 GameObject:
   m_ObjectHideFlags: 0
@@ -18851,7 +18866,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1766308396}
   - component: {fileID: 1766308395}
-  - component: {fileID: 1766308397}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -18889,20 +18903,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1766308397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766308394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 095aaa505d29a4a3c8e7475888d2234b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _toggleEffects: 1
-  _toggleWaves: 1
 --- !u!1 &1768076543
 GameObject:
   m_ObjectHideFlags: 0
@@ -19521,7 +19521,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -23155,14 +23155,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1605168217}
     m_Modifications:
+    - target: {fileID: 2250592340807247397, guid: 4dc2dde62905f4841920c4b8aa139e30, type: 3}
+      propertyPath: _toggleWaves
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2250592340807247397, guid: 4dc2dde62905f4841920c4b8aa139e30, type: 3}
+      propertyPath: _toggleEffects
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6288804664075499475, guid: 4dc2dde62905f4841920c4b8aa139e30, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6288804664075499475, guid: 4dc2dde62905f4841920c4b8aa139e30, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1766308395}
+      objectReference: {fileID: 1357846988}
     - target: {fileID: 6288804664075499475, guid: 4dc2dde62905f4841920c4b8aa139e30, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1357846988}
+      objectReference: {fileID: 1357846989}
+    - target: {fileID: 6288804664075499475, guid: 4dc2dde62905f4841920c4b8aa139e30, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6288804664075499475, guid: 4dc2dde62905f4841920c4b8aa139e30, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6288804664075499475, guid: 4dc2dde62905f4841920c4b8aa139e30, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 6288804664075499475, guid: 4dc2dde62905f4841920c4b8aa139e30, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Toggle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6288804664075499475, guid: 4dc2dde62905f4841920c4b8aa139e30, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Toggle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6288804664075499475, guid: 4dc2dde62905f4841920c4b8aa139e30, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlaySoundOnStart, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6288804664075499475, guid: 4dc2dde62905f4841920c4b8aa139e30, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ToggleAudio, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 6288804664075499486, guid: 4dc2dde62905f4841920c4b8aa139e30, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -23251,5 +23291,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: toggle effect audio
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 2250592340807247397, guid: 4dc2dde62905f4841920c4b8aa139e30, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4dc2dde62905f4841920c4b8aa139e30, type: 3}

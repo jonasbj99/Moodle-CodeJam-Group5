@@ -370,8 +370,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6288804664075499486}
   - component: {fileID: 6288804664075499475}
-  - component: {fileID: 6288804664075499484}
   - component: {fileID: -3135521096903754014}
+  - component: {fileID: 2250592340807247397}
   m_Layer: 5
   m_Name: toggle effect audio
   m_TagString: Untagged
@@ -472,7 +472,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6288804664075499484}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToggleAudio, Assembly-CSharp
         m_MethodName: Toggle
         m_Mode: 1
@@ -485,20 +485,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 0
---- !u!114 &6288804664075499484
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6288804664075499487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 095aaa505d29a4a3c8e7475888d2234b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _toggleEffects: 1
-  _toggleWaves: 1
 --- !u!114 &-3135521096903754014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,3 +500,17 @@ MonoBehaviour:
   uiHandleRectTransform: {fileID: 6288804663346040264}
   backgroundActiveColor: {r: 0.031772893, g: 0.8287934, b: 0.9622642, a: 1}
   handleActiveColor: {r: 0.46226418, g: 0.4339178, b: 0.4339178, a: 1}
+--- !u!114 &2250592340807247397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6288804664075499487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 095aaa505d29a4a3c8e7475888d2234b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _toggleEffects: 0
+  _toggleWaves: 0
