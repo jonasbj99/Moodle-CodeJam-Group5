@@ -10,7 +10,7 @@ public class NavigationIcons : MonoBehaviour
     public void Update()
     {
         if (targetPanel.active)
-        {
+        
             markedSprite.SetActive(true);
         }
         else
