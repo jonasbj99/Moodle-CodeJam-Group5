@@ -13187,7 +13187,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299839498}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3e3964ae96d7a4b6e9129625afa97ad8, type: 3}
@@ -18866,6 +18866,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1766308396}
   - component: {fileID: 1766308395}
+  - component: {fileID: 1766308397}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -18903,6 +18904,85 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1766308397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766308394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae37e5c1a3d654b73a683072405d446f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 1746252818}
+  - {fileID: 522618885}
+  - {fileID: 2134152007}
+  - {fileID: 1200667609}
+  - {fileID: 458331556}
+  - {fileID: 1189780044}
+  - {fileID: 673389152}
+  - {fileID: 151002214}
+  - {fileID: 677372042}
+  - {fileID: 984251786}
+  - {fileID: 479013462}
+  - {fileID: 1404116052}
+  - {fileID: 1768076545}
+  - {fileID: 387566538}
+  - {fileID: 31249232}
+  - {fileID: 92508519}
+  - {fileID: 875867887}
+  - {fileID: 2011642974}
+  - {fileID: 346085534}
+  - {fileID: 179167122}
+  - {fileID: 1476989704}
+  - {fileID: 804236184}
+  - {fileID: 370082039}
+  - {fileID: 1836017197}
+  - {fileID: 1733239495}
+  - {fileID: 267468420}
+  - {fileID: 1287333417}
+  - {fileID: 2131846693}
+  - {fileID: 1832047812}
+  - {fileID: 2125084078}
+  - {fileID: 731595412}
+  - {fileID: 1144560643}
+  - {fileID: 1019140967}
+  - {fileID: 1670698816}
+  - {fileID: 1180925493}
+  - {fileID: 578554912}
+  - {fileID: 1529311952}
+  - {fileID: 55423048}
+  - {fileID: 1007665836}
+  - {fileID: 1816264991}
+  - {fileID: 606131405}
+  - {fileID: 1323753201}
+  - {fileID: 680509320}
+  - {fileID: 130741508}
+  - {fileID: 1772031968}
+  - {fileID: 1305667088}
+  - {fileID: 1405807820}
+  - {fileID: 1365804036}
+  - {fileID: 570918242}
+  - {fileID: 902448142}
+  - {fileID: 827306635}
+  - {fileID: 1265226897}
+  - {fileID: 188948444}
+  - {fileID: 402787484}
+  - {fileID: 1427015049}
+  - {fileID: 723700736}
+  - {fileID: 950001969}
+  - {fileID: 1425238957}
+  - {fileID: 1421139333}
+  - {fileID: 2084425016}
+  - {fileID: 6656102}
+  - {fileID: 1590002961}
+  - {fileID: 926739807}
+  - {fileID: 106352724}
+  - {fileID: 649171239}
+  _clip: {fileID: 8300000, guid: b58a3d81b6d0243bfbc04f7ae244b97d, type: 3}
 --- !u!1 &1768076543
 GameObject:
   m_ObjectHideFlags: 0
