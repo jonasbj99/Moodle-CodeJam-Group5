@@ -7,21 +7,12 @@ public class VolumeSlider : MonoBehaviour
 {
     [SerializeField] public Slider _slider;
 
-    //private float MasterVolume = 0f;
 
 
     void Start()
-    {   
-        _slider.value = PlayerPrefs.GetFloat("megavolume");     
+    {      
+        SoundManager.Instance.ChangeMasterVolume(_slider.value);
         _slider.onValueChanged.AddListener(val => SoundManager.Instance.ChangeMasterVolume(val));
 
     }
-    void OnDestroy()
-    {
-        PlayerPrefs.SetFloat("megavolume", _slider.value);
-        PlayerPrefs.Save();
-        Debug.Log("volume saved");
-    }
-
-
 }
