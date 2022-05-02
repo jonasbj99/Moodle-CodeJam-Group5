@@ -12,15 +12,15 @@ public class VolumeSlider : MonoBehaviour
 
     void Start()
     {   
-        _slider.value = PlayerPrefs.GetFloat("gayvolume");     
+        _slider.value = PlayerPrefs.GetFloat("megavolume");     
         _slider.onValueChanged.AddListener(val => SoundManager.Instance.ChangeMasterVolume(val));
 
     }
     void OnDestroy()
     {
-        PlayerPrefs.SetFloat("gayvolume", _slider.value);
+        PlayerPrefs.SetFloat("megavolume", _slider.value);
         PlayerPrefs.Save();
-        Debug.Log("save da volume");
+        Debug.Log("volume saved");
     }
 
 

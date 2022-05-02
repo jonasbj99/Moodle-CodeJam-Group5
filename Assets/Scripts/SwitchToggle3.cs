@@ -33,7 +33,7 @@ public class SwitchToggle3 : MonoBehaviour
 
         toggle.onValueChanged.AddListener(OnSwitch);
 
-        bool val = PlayerPrefs.GetInt("pleasekillme3",0) == 1 ? true : false;;
+        bool val = PlayerPrefs.GetInt("pleasesaveman3",0) == 1 ? true : false;;
         
         Debug.Log("it has been loaded brother");
         if (val)
@@ -54,8 +54,8 @@ public class SwitchToggle3 : MonoBehaviour
 
       //handleImage.color = on ? handleActiveColor : handleDefaultColor ; // no anim
       handleImage.DOColor (on ? handleActiveColor : handleDefaultColor, .4f) ;
-      PlayerPrefs.SetInt("pleasekillme3", on ? 1 : 0);
-      Debug.Log("shit saved brother");
+      PlayerPrefs.SetInt("ppleasesaveman3", on ? 1 : 0);
+      Debug.Log("saved brother");
       PlayerPrefs.Save();
    }
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NavigationIcons : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class NavigationIcons : MonoBehaviour
     public void Update()
     {
         if (targetPanel.active)
+        {
         
             markedSprite.SetActive(true);
         }
