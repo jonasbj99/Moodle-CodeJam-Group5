@@ -20309,8 +20309,8 @@ GameObject:
   - component: {fileID: 1748560424}
   - component: {fileID: 1748560427}
   - component: {fileID: 1748560426}
-  - component: {fileID: 1748560425}
   - component: {fileID: 1748560428}
+  - component: {fileID: 1748560425}
   m_Layer: 5
   m_Name: DarkWave
   m_TagString: Untagged
@@ -20346,7 +20346,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1748560423}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b98db43bfa2f2e43880a10f167e8e1e, type: 3}
+  m_Script: {fileID: 11500000, guid: 766c42c885b9e45e99e475d096ec40a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: -80
@@ -24804,7 +24804,7 @@ PrefabInstance:
     - target: {fileID: 1377679846982093664, guid: 0a164c757f6354f489e1575a99048284, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1748560425}
+      objectReference: {fileID: 0}
     - target: {fileID: 1377679846982093664, guid: 0a164c757f6354f489e1575a99048284, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
