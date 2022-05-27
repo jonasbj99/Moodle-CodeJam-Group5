@@ -33,6 +33,6 @@ public class ReverseMovement : MonoBehaviour
 
     public void DisableWaveAnimation()
     {
-        this.enabled = false;  
+        this.enabled = !this.enabled; 
     }
 }
