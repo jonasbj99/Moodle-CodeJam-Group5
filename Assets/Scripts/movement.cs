@@ -26,7 +26,8 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // value fra accelerometer input på x aksen * hastigheden
+        // input.acceleration opfanger ændringer i bevægelserne på telefonen
+        // input.acceleration.>>x<< x står får på hvilken akse = x-aksen
         // linje 31 viser indenfor hvilken ramme bølgerne kan bevæge sig, så bølgerne ikke bevæger sig uendeligt
         dirx = Input.acceleration.x * moveSpeed;
         transform.position = new Vector2(Mathf.Clamp(transform.position.x, 400f, 600f), transform.position.y);
@@ -34,6 +35,7 @@ public class movement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //rb.velocity = hastighedsvektor. Det repræsenterer hastigheden af ​​ændring af Rigidbody position
         rb.velocity = new Vector2(dirx, 0f);
     }
 
